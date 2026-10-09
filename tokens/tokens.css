@@ -1,0 +1,64 @@
+/* Jacobs, Coolidge & Company (JCC) design tokens
+   Source of truth: BRAND.md. Brand hexes from the 2017 palette PDF;
+   web values from jacobsandcoolidge.com (Elementor global colors) and the AA-adjusted web palette. */
+:root {
+  /* Core brand palette (2017 palette PDF) */
+  --jcc-blue: #1B75BC;          /* Pantone 2174C, primary / structure */
+  --jcc-sky: #27AAE1;           /* Pantone 299C, light blue */
+  --jcc-orange: #F68C1F;        /* Pantone 144C, ACCENT only */
+  --jcc-gray-9: #6D6E71;        /* Cool Gray 9, body text */
+  --jcc-gray-7-print: #A7A9AC;  /* Cool Gray 7, print only (2.36:1 on white) */
+  --jcc-gray-7: #75767A;        /* Cool Gray 7, AA-adjusted for web */
+
+  /* Web surfaces / ink */
+  --jcc-navy: #0C1F2F;          /* website dark sections & headings */
+  --jcc-navy-deep: #081520;
+  --jcc-ink: #183146;
+  --jcc-blue-deep: #13568A;
+  --jcc-blue-ink: #0E3F66;
+  --jcc-blue-wash: #E8F0F8;
+  --jcc-orange-dark: #D97A15;   /* hover on orange */
+  --jcc-orange-wash: #FEF3E5;
+  --jcc-orange-text-on-light: #9A560C;
+  --jcc-paper: #F4F7F9;
+  --jcc-surface-alt: #F2F3F3;   /* website light section */
+  --jcc-line: #DCE4EA;
+  --jcc-white: #FFFFFF;
+  --jcc-scrim: rgba(10, 38, 60, 0.77); /* website photo overlay (#0A263CC4) */
+
+  /* Gradients (the only allowed ones) */
+  --jcc-band: linear-gradient(135deg, #27AAE1 0%, #1B75BC 100%);
+  --jcc-band-deep: linear-gradient(135deg, #1B75BC 0%, #0E3F66 100%);
+  --jcc-band-navy: linear-gradient(140deg, #1B75BC 0%, #0E3F66 55%, #0C2A46 100%);
+
+  /* Typography */
+  --jcc-font-display: "justus-pro", Georgia, "Times New Roman", serif;           /* slab serif headlines (Adobe Fonts) */
+  --jcc-font-body: "proxima-nova", Arial, "Helvetica Neue", sans-serif;          /* body (Adobe Fonts) */
+  --jcc-font-label: "proxima-nova-condensed", "Arial Narrow", Arial, sans-serif; /* eyebrows / labels */
+  --jcc-font-display-open: "Source Serif 4", Georgia, serif;   /* self-hostable stand-in, see fonts/ */
+  --jcc-font-body-open: "Source Sans 3", Arial, sans-serif;
+
+  --jcc-text-xs: 0.75rem;
+  --jcc-text-sm: 0.875rem;
+  --jcc-text-base: 1rem;
+  --jcc-text-lg: 1.25rem;
+  --jcc-text-xl: 1.5rem;
+  --jcc-text-2xl: 2rem;
+  --jcc-text-3xl: 2.5rem;
+  --jcc-text-4xl: 3.25rem;
+  --jcc-leading-tight: 1.2;
+  --jcc-leading-body: 1.6;
+  --jcc-weight-display: 600;
+
+  /* Spacing (8px base) */
+  --jcc-space-1: 0.25rem; --jcc-space-2: 0.5rem; --jcc-space-3: 0.75rem; --jcc-space-4: 1rem;
+  --jcc-space-6: 1.5rem; --jcc-space-8: 2rem; --jcc-space-12: 3rem; --jcc-space-16: 4rem;
+
+  /* Shape & depth: restrained */
+  --jcc-radius-sm: 4px; --jcc-radius-md: 8px; --jcc-radius-lg: 12px; --jcc-radius-pill: 9999px;
+  --jcc-shadow-sm: 0 1px 2px rgba(16, 36, 53, 0.06);
+  --jcc-shadow-md: 0 2px 8px rgba(16, 36, 53, 0.08);
+  --jcc-focus-ring: 0 0 0 3px rgba(27, 117, 188, 0.25);
+  --jcc-ease: cubic-bezier(.23, 1, .32, 1);
+  --jcc-duration: 160ms;
+}
