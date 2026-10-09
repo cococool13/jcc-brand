@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form fields | JCC component</title>
+  <link rel="icon" href="../logos/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../tokens/tokens.css">
+  <link rel="stylesheet" href="../css/jcc.css">
+</head>
+<body>
+<!-- Form fields: Label above input, 4px radius, blue focus ring, help text in gray-9, primary submit. -->
+ <div class="jcc-section"><div class="jcc-container" style="max-width:560px">
+  <form>
+   <div class="jcc-field"><label class="jcc-label" for="n">Full name</label><input class="jcc-input" id="n" type="text" placeholder="First and last name"></div>
+   <div class="jcc-field"><label class="jcc-label" for="e">Email</label><input class="jcc-input" id="e" type="email" placeholder="you@example.com"><span class="jcc-help">We'll only use this to reply to you.</span></div>
+   <div class="jcc-field"><label class="jcc-label" for="t">Topic</label><select class="jcc-select" id="t"><option>Retirement planning</option><option>Investments</option><option>Insurance</option></select></div>
+   <div class="jcc-field"><label class="jcc-label" for="m">Message</label><textarea class="jcc-textarea" id="m" rows="4"></textarea></div>
+   <label class="jcc-check"><input type="checkbox"> I'd like to receive occasional updates.</label>
+   <p style="margin-top:var(--jcc-space-6)"><button class="jcc-btn jcc-btn--primary" type="submit">Send Message</button></p>
+  </form>
+ </div></div>
+</body>
+</html>

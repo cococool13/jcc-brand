@@ -25,7 +25,15 @@ The mark is a stylized **bridge** ("The Four Pillars Bridge") over the wordmark 
 | Logo + URL lockup | n/a | `logos/png/jcc.logo.color.with-website.png` | Small lockup (use UNKNOWN) |
 | Website favicon | n/a | `logos/png/jcc.favicon.web.png` | As served by jacobsandcoolidge.com |
 
-Rules: use the files, never redraw or recolor. On dark use the **white file** (not a CSS invert). Alt text: "Jacobs, Coolidge & Company". Typical web header height 64–80px. Clear-space and minimum-size rules: **UNKNOWN** (suggest clear space ≥ the height of the "J", min width 120px for full logo).
+Favicon / app icons: `logos/favicon/` (favicon.svg, favicon.ico, 32px, 180px apple-touch, 512px). See `logos/README.md`.
+
+**Usage rules**
+- Use the supplied files only; don't redraw, recolor, stretch, rotate, outline, add shadows/effects, or rearrange the bridge and wordmark.
+- Light backgrounds → `color` files. Navy, blue, or photo-under-scrim → `white` files (never a CSS invert).
+- Keep the full logo's proportions (1.90:1). Typical web header height 64–80px; LinkedIn/social masthead ~78px.
+- Alt text: "Jacobs, Coolidge & Company".
+- Styleboard (2017) shows the logo with ample surrounding white space and the bridge icon used alone in the hexagon for social. It does **not** specify clear-space, minimum size, or misuse rules: those remain **UNKNOWN**. Recommended (not official): clear space ≥ the bridge's tower height on all sides; full logo ≥ 120px wide on screen, icon ≥ 16px.
+- Styleboard shows Option A (bridge over wordmark) and Option B (hexagon icon over wordmark). The 2017 logo files delivered to JCC use the bridge mark (Option A) for the full logo and the hexagon for icons (the website favicon is the hexagon), so treat that as current. Formal approval record: **UNKNOWN**.
 
 ## 3. Color
 ### Core palette (official 2017 palette, `docs/jcc-brand-palette.pdf`)
@@ -45,7 +53,7 @@ Navy `#0C1F2F` (dark sections, headings), photo scrim `rgba(10,38,60,.77)`, ligh
 - Blue carries structure; orange is a small accent (CTA such as "Learn More", kicker rules, dots). Orange text only on navy/dark; on light use orange as a tinted chip (`#FEF3E5` bg, `#9A560C` text).
 - No rainbow palettes, no green/red for good/bad in data (use blue vs gray).
 - Allowed gradients only: `135° #27AAE1→#1B75BC`, `135° #1B75BC→#0E3F66`, `140° #1B75BC→#0E3F66→#0C2A46`.
-- All text meets WCAG AA.
+- All text meets WCAG AA. Approved and failing text/background pairs: `docs/accessibility.md`.
 
 ## 4. Typography
 | Role | Brand font (print + website) | Digital fallback | Self-hostable open stand-in (in `fonts/`) |
@@ -54,7 +62,7 @@ Navy `#0C1F2F` (dark sections, headings), photo scrim `rgba(10,38,60,.77)`, ligh
 | Body | **Proxima Nova** 400 | Arial | Source Sans 3 |
 | Labels / eyebrows | **Proxima Nova Condensed** 500, uppercase, +0.08em | Arial Narrow | Source Sans 3 |
 
-Justus Pro and Proxima Nova are served on jacobsandcoolidge.com via Adobe Fonts (Typekit kit). They are licensed fonts and are **not** included here. Source Serif 4 / Source Sans 3 (SIL OFL) are included as `.woff2` for self-hosting.
+Justus Pro and Proxima Nova are licensed through Adobe Fonts and load from JCC's kit `https://use.typekit.net/yko2ltc.css` (imported by `tokens/tokens.css`). Font files are **not** redistributed here. Source Serif 4 / Source Sans 3 (SIL OFL) are included as `.woff2` for self-hosting.
 Scale (rem): 0.75 / 0.875 / 1 / 1.25 / 1.5 / 2 / 2.5 / 3.25. Headings line-height 1.2; body 1.6. Avoid tight negative tracking and "tech startup" geometric headlines; avoid uppercase labels everywhere.
 
 ## 5. Layout, shape, imagery
@@ -67,8 +75,8 @@ Scale (rem): 0.75 / 0.875 / 1 / 1.25 / 1.5 / 2 / 2.5 / 3.25. Headings line-heigh
 ## 6. Voice and tone
 Judicious, creative, collaborative. Classic and conservative with an updated feel; reliable, trustworthy, professional, consultative. Sound like a trusted advisor explaining clearly: plain language, specific, never salesy or jargon-heavy, never alarmist. Recurring ideas: the bridge, foundation of trust, families, all life stages, legacy, "business is personal".
 
-## 7. Components (see `css/jcc.css`, `examples/index.html`)
-Header (logo left, nav right) · Hero (photo + scrim, tagline, orange "Learn More" + ghost button) · Buttons (primary blue, outline blue, accent orange, ghost on dark) · Eyebrow label + 64×5px orange kicker rule · Cards (white, hairline, 8px radius) · Chips · Divider with 6px orange dot · Navy footer with white logo and compliance disclosure.
+## 7. Components (see `css/jcc.css`, `components/`, `examples/`)
+Header (logo left, nav right) · Hero (photo + scrim, tagline, orange "Learn More" + ghost button) · Buttons (primary blue, outline blue, accent orange, ghost on dark) · Eyebrow label + 64×5px orange kicker rule · Cards (white, hairline, 8px radius) · Chips · Divider with 6px orange dot · Navy footer with white logo and compliance disclosure · Form fields · Table · Stat/figure · Quote band · Badge · US Letter one-pager · 1080×1080 social post.
 
 ## 8. Required disclosure
 Include on marketing pages and printed pieces, verbatim:
