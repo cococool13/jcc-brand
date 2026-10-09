@@ -31,3 +31,7 @@ Brand essentials: blue `#1B75BC`, light blue `#27AAE1`, orange accent `#F68C1F`,
 4. **Any other notes:** paste the key rules from BRAND.md (orange is accent only; use the white logo file on dark; Justus Pro / Proxima Nova are Adobe Fonts, not bundled).
 
 Fonts: Justus Pro and Proxima Nova are licensed via Adobe Fonts and are not redistributed here.
+
+## Brand fonts (licensed)
+
+Justus Pro, Proxima Nova and Proxima Nova Condensed are licensed to JCC through Adobe Fonts and load from JCC's kit: `<link rel="stylesheet" href="https://use.typekit.net/yko2ltc.css">` (CSS names `justus-pro`, `proxima-nova`, `proxima-nova-condensed`). The font files themselves can't be redistributed, so they aren't in this repo. Source Serif 4 and Source Sans 3 in `fonts/` are open-licensed stand-ins.
