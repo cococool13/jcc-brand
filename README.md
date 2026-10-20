@@ -24,12 +24,12 @@ logos/svg, logos/png         Full logo, icon, social mark: color (light bg) + wh
 logos/favicon/               favicon.svg/.ico, 32, 180 (apple-touch), 512
 fonts/                       Source Serif 4 / Source Sans 3 woff2 (OFL stand-ins)
 assets/web/                  Brand imagery (bridge photo, background texture)
-docs/                        2017 palette + styleboard (PDF + PNG), accessibility.md (contrast table)
+docs/                        2017 palette (PDF + PNG) + styleboard (PNG), accessibility.md (contrast table)
 ```
 
 ## Import into Claude Design
 1. In Claude (claude.ai): Settings → Design systems → create a new design system (or in standalone claude.ai/design: Design systems → Create new design system).
-2. **Link code on GitHub:** paste `https://github.com/cococool13/jcc-brand`. The repo is private, so your GitHub account must be connected/authorized for Claude when prompted. If the link can't be read, use **Link code from your computer** and pick a local clone of this repo instead (it's small and frontend-only, no subfolder needed).
+2. **Link code on GitHub:** paste `https://github.com/cococool13/jcc-brand`. The repo is public, so Claude can read it without connecting your GitHub account. If the link can't be read, use **Link code from your computer** and pick a local clone of this repo instead (it's small and frontend-only, no subfolder needed).
 3. **Add fonts, logos and assets:** upload `logos/svg/jcc.logo.color.svg`, `logos/svg/jcc.logo.white.svg`, `logos/svg/jcc.icononly.color.svg`, `fonts/*.woff2`, and `docs/jcc-styleboard-2017.png`.
 4. **Any other notes:** paste the contents of `DESIGN.md`.
 5. Review the generated palette/type/components, then test with: "Create a landing page for JCC", "Make a one-pager about our planning process", "Design a 1080×1080 LinkedIn post". Compare against `examples/`. Publish when it matches.
