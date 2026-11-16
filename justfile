@@ -10,7 +10,7 @@ check:
 # The repo has no build or tests, so this is the secret scan: full history
 # (well under a second) plus uncommitted and staged changes.
 check-fast:
-    gitleaks git --no-banner --redact .
+    .ci/bin/ci-gitleaks
     gitleaks protect --no-banner --redact
     gitleaks protect --staged --no-banner --redact
 
@@ -24,7 +24,11 @@ test:
 
 # From gitleaks.yml: full history.
 gitleaks:
-    gitleaks git --no-banner --redact .
+    .ci/bin/ci-gitleaks
 
 ci-drift:
     .ci/bin/ci-sync --check .
+
+# Whole history (nightly).
+gitleaks-full:
+    .ci/bin/ci-gitleaks --full
