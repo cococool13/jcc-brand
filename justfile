@@ -6,8 +6,8 @@ set shell := ["bash", "-euo", "pipefail", "-c"]
 check:
     .ci/bin/ci-par gitleaks
 
-# The repo has no build or tests, so this is the secret scan: full history
-# (well under a second) plus uncommitted and staged changes.
+# The repo has no build or tests, so this is the secret scan: branch commits
+# plus uncommitted and staged changes.
 check-fast:
     .ci/bin/ci-gitleaks
     gitleaks protect --no-banner --redact
@@ -21,7 +21,7 @@ fix:
 test:
     @echo "test: no tests in this repo"
 
-# Full history.
+# Branch commits. `gitleaks-full` scans the whole history.
 gitleaks:
     .ci/bin/ci-gitleaks
 
