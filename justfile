@@ -1,6 +1,5 @@
 # CI contract. Agents, the pre-push hook and `ship` all run `just check`.
 # Kit: .ci/ (vendored with ci-sync; `just ci-drift` shows drift).
-# GitHub Actions still run here too (public repo): gitleaks.yml runs the same scan.
 # No taste check: jcc-* client brands are exempt from design-guard.
 set shell := ["bash", "-euo", "pipefail", "-c"]
 
@@ -22,7 +21,7 @@ fix:
 test:
     @echo "test: no tests in this repo"
 
-# From gitleaks.yml: full history.
+# Full history.
 gitleaks:
     .ci/bin/ci-gitleaks
 
