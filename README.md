@@ -1,39 +1,17 @@
-# JCC Brand: Jacobs, Coolidge & Company design system
+# Jacobs, Coolidge & Company design system
 
-Brand-only design system for **Jacobs, Coolidge & Company** (wealth advisory, since 1962), structured for Claude Design import. No client or project material.
+Start with [DESIGN.md](DESIGN.md) for build rules and [BRAND.md](BRAND.md) for brand guidelines.
 
-## Start here
-1. `DESIGN.md`: agent-facing rules (do/don't, tokens, component usage). **Read first.**
-2. `BRAND.md`: full brand guidelines and sources.
-3. `tokens/tokens.css` + `css/jcc.css`: the code. `components/` and `examples/` show it in use.
-
-## Contents
-```
-DESIGN.md                    Agent rules: color, type, layout, components, logos, voice, compliance, don'ts
-BRAND.md                     Full guidelines (identity, logo usage, palette, type, imagery, voice)
-tokens/tokens.css            --jcc-* CSS variables (+ @import of JCC's Adobe Fonts kit)
-tokens/tokens.json           Same tokens as JSON
-css/jcc.css                  All component styles
-components/                  One HTML file per component: button, card, hero, header, footer,
-                             form-fields, table, stat, quote-band, badge-chip (+ index.html)
-examples/landing.html        Landing page
-examples/one-pager.html      US Letter one-pager / report
-examples/social-post.html    1080x1080 social post
-examples/index.html          Style gallery (type scale, swatches)
-logos/svg, logos/png         Full logo, icon, social mark: color (light bg) + white (dark bg)
-logos/favicon/               favicon.svg/.ico, 32, 180 (apple-touch), 512
-fonts/                       Source Serif 4 / Source Sans 3 woff2 (OFL stand-ins)
-assets/web/                  Brand imagery (bridge photo, background texture)
-docs/                        2017 palette (PDF + PNG) + styleboard (PNG), accessibility.md (contrast table)
-```
+- [Tokens](tokens/tokens.css) and [component styles](css/jcc.css)
+- [Components](components/index.html) and [examples](examples/index.html)
+- [Logo files](logos/README.md) and [contrast checks](docs/accessibility.md)
 
 ## Import into Claude Design
-1. In Claude (claude.ai): Settings → Design systems → create a new design system (or in standalone claude.ai/design: Design systems → Create new design system).
-2. **Link code on GitHub:** paste `https://github.com/cococool13/jcc-brand`. The repo is public, so Claude can read it without connecting your GitHub account. If the link can't be read, use **Link code from your computer** and pick a local clone of this repo instead (it's small and frontend-only, no subfolder needed).
-3. **Add fonts, logos and assets:** upload `logos/svg/jcc.logo.color.svg`, `logos/svg/jcc.logo.white.svg`, `logos/svg/jcc.icononly.color.svg`, `fonts/*.woff2`, and `docs/jcc-styleboard-2017.png`.
-4. **Any other notes:** paste the contents of `DESIGN.md`.
-5. Review the generated palette/type/components, then test with: "Create a landing page for JCC", "Make a one-pager about our planning process", "Design a 1080×1080 LinkedIn post". Compare against `examples/`. Publish when it matches.
+
+1. Create a design system and link this repository. If the link fails, select a local clone.
+2. Add the [SVG logos](logos/svg/), [font files](fonts/), and [styleboard](docs/jcc-styleboard-2017.png).
+3. Add [DESIGN.md](DESIGN.md) as guidance. Compare generated pages, print layouts, and social posts with the [examples](examples/) before publishing.
 
 ## Brand fonts (licensed)
 
-Justus Pro, Proxima Nova and Proxima Nova Condensed are licensed to JCC through Adobe Fonts and load from JCC's kit: `<link rel="stylesheet" href="https://use.typekit.net/yko2ltc.css">` (CSS names `justus-pro`, `proxima-nova`, `proxima-nova-condensed`). The font files themselves can't be redistributed, so they aren't in this repo. Source Serif 4 and Source Sans 3 in `fonts/` are open-licensed stand-ins.
+Justus Pro, Proxima Nova, and Proxima Nova Condensed are licensed to JCC through Adobe Fonts. [The token stylesheet](tokens/tokens.css) loads JCC’s kit. Use the open-licensed Source Serif 4 and Source Sans 3 files in [fonts/](fonts/) when the kit is unavailable. The Adobe font files cannot be redistributed.
